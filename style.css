@@ -1,0 +1,369 @@
+    .collapsible {
+        background-color: transparent;
+        left: 20px;
+        font-size: 30px;
+        font-weight: bolder;
+        width: 100%;
+        margin-left: 25px;
+    }
+    
+    h1 {
+        font-family: Arial;
+        font-size: 70px;
+    }
+    
+    h1.rainbow {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-family: sans-serif;
+        font-size: 50px;
+        background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    h2.description {
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 25px;
+    }
+    
+    h2.sorting {
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 0px;
+        color: #a30000;
+    }
+    
+    button.sort {
+        height: 40px;
+        width: 60px;
+        background-color: #a30000;
+        font-size: 15px;
+        font-weight: bolder;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button.reset {
+        height: 40px;
+        width: 60px;
+        background-color: #352424;
+        font-size: 15px;
+        font-weight: bolder;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button.sort:hover {
+        background-color: #9e6c6c;
+        transition: 0.3s;
+    }
+    
+    .uppersort {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+    }
+    
+    .rightCircle {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: red;
+        right: -12px;
+        top: -25px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        box-shadow: 2px 2px 5px #2c2c2cd5;
+        border: 10px white;
+    }
+    
+    .header.text {
+        margin: 0px auto;
+    }
+    
+    div.gallery {
+        margin: 5px;
+        border: 2px solid rgb(177, 177, 177);
+        float: left;
+        width: 400px;
+        height: 400px;
+        border-radius: 7px;
+        box-shadow: 1px 1px 5px #2c2c2c77;
+        position: relative;
+    }
+    
+    div.gallery:hover {
+        background-color: rgb(153, 152, 152);
+        opacity: 1;
+        transition: 0.3s;
+    }
+    
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.description {
+        padding: 10px;
+        text-align: center;
+        font-family: Arial;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    
+    .desc {
+        padding: 10px;
+        text-align: center;
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    img.pizza {
+        border-radius: 7px;
+        max-height: 266.5px;
+        overflow: hidden;
+    }
+    
+    img.plus {
+        height: 125px;
+        width: 125px;
+    }
+    
+    img.chilli1 {
+        position: absolute;
+        right: 10px;
+        top: 280px;
+        max-width: 50px;
+        max-height: 50px;
+    }
+    
+    img.chilli2 {
+        position: absolute;
+        right: 35px;
+        top: 280px;
+        max-width: 50px;
+        max-height: 50px;
+    }
+    
+    img.chilli3 {
+        position: absolute;
+        right: 60px;
+        top: 280px;
+        max-width: 50px;
+        max-height: 50px;
+    }
+    
+    .container {
+        margin-top: 30px;
+    }
+    
+    button.deletebtn {
+        position: absolute;
+        right: 360px;
+        top: 1px;
+        font-size: 20px;
+        border: none;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: red;
+        font-size: 20px;
+        font-weight: 1000;
+        color: white;
+        box-shadow: 2px 2px 5px #2c2c2cd5;
+        cursor: pointer;
+    }
+    
+    .container .circle {
+        position: absolute;
+        top: -21px;
+        right: -21px;
+        width: 40px;
+        height: 40px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        background: #4da6ff;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header {
+        overflow: hidden;
+        background-color: #ff6434;
+        padding: 20px 10px;
+        box-shadow: 2px 2px 10px #0000009c;
+    }
+    
+    .header a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+    
+    .header h1 {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 0px;
+        text-decoration: none;
+        font-size: 35px;
+        line-height: 0px;
+        border-radius: 0px;
+    }
+    
+    .header h1:hover {
+        background-color: #ddd;
+        transition: 0.3s;
+        color: #fdd758;
+    }
+    
+    .header a:hover {
+        background-color: #ddd;
+        transition: 0.3s;
+        color: black;
+    }
+    
+    .header a.active {
+        background-color: #a30000;
+        color: white;
+    }
+    
+    .header-right {
+        float: right;
+    }
+    
+    @media screen and (max-width: 500px) {
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        .header-right {
+            float: none;
+        }
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    /* Add styles to the form container */
+    
+    .form-container {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        background-color: white;
+    }
+    /* Full-width input fields */
+    
+    .form-container input[type=text],
+    .form-container input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+    /* When the inputs get focus, do something */
+    
+    .form-container input[type=text]:focus,
+    .form-container input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+    /* Set a style for the ADD button */
+    
+    .form-container .btn {
+        background-color: #0fb842;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+    
+    h1.form {
+        text-size-adjust: 10px;
+    }
+    /* Add a red background color to the cancel button */
+    
+    .form-container .cancel {
+        background-color: red;
+    }
+    /* Add some hover effects to buttons */
+    
+    .form-container .btn:hover,
+    .open-button:hover {
+        opacity: 1;
+    }
+    
+    img.setimage {
+        max-width: 450px;
+        max-height: 400px;
+    }
+    /* sidebar */
+    
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        box-shadow: 2px 2px 30px #000000;
+        ;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }

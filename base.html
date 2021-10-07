@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Pizza menu</h1>
+        <div class="header-right">
+            <a class="active" href="base.html">Home</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <!-- Sorting buttons -->
+    <div class="uppersort">
+        <h2 class="sorting">Sort by</h2>
+        <button class="sort" onclick="sortBy(0)">Name</button>
+        <button class="sort" onclick="sortBy(1)">Price</button>
+        <button class="sort" onclick="sortBy(2)">Heat</button>
+        <button class="reset" onclick="location.reload()">Reset</button>
+    </div>
+
+    <div>
+
+        <div id="main">
+            <!-- A placeholder card for testing purposes -->
+
+            <!-- <div id="Pepperoni pizza;70.25;3" class="gallery">
+                <div class="rightCircle">70.25€</div>
+                <a>
+                    <img class="pizza" src="images/pizza1.jpg" alt="pizza">
+                </a>
+
+                <div>
+                    <h2 class="collapsible">Pepperoni pizza </h2>
+                    <img class="chilli1" src="images/chilli.png" alt="chili">
+                    <img class="chilli2" src="images/chilli.png" alt="chili">
+                    <img class="chilli3" src="images/chilli.png" alt="chili">
+                </div>
+
+                <button class="deletebtn" onclick="Delete(this) ">x</button>
+
+                <h2 class="description">adskjaskdj</h2>
+
+            </div> -->
+
+
+            <!-- Blank card which shows where and how will the added pizzas be and look -->
+        </div>
+        <div class="gallery">
+            <img class="plus" , src="images/plus.png" alt="plus icon" , onclick="openNav()">
+        </div>
+    </div>
+
+    <!-- Pizza add form which slides out as a navigation sidebar -->
+    <div id="mySidenav" class="sidenav">
+        <form action="" class="form-container" onsubmit="store(), saveAndDisplay(), this.form.reset()">
+            <h1 class="form">Add a pizza</h1>
+
+            <div>
+                <!-- The selected picture will be shown before submition of a form -->
+                <label for="picture"><b>Select a picture:</b></label>
+                <input id="picture" accept="image/*" type='file' name="picture" , onchange="readURL(this)" required>
+                <img class="setimage" id="pic" src="images/pizza1.jpg" alt="your image" />
+
+            </div>
+
+            <label for="pname"><b>Name</b></label>
+            <input id="name" type="text" placeholder="Name of a pizza" name="pname" required>
+
+            <label for="price"><b>Price</b></label>
+            <input id="cost" type="text" placeholder="The cost of a pizza" pattern="[0-9\w+.]{1,}[0-9]" title="Price must be in a XX.XX format" name="price" required>
+
+            <label for="heat"><b>Heat</b></label>
+            <input id="heat" type="text" placeholder="Heat level 1-3 (Optional)" pattern="[0-3]{1}" title="Number must be between 0 and 3" name="heat" required>
+
+            <label for="toppings"><b>Toppings</b></label>
+            <input id="toppings" type="text" placeholder="Toppings on a pizza" pattern="([a-zA-Z]+\w+,){1,}([a-zA-Z]+)" title="There must be at least 2 toppings sepperated by (,)" name="toppings" required>
+
+
+
+            <button href="javascript:void(0)" , type="submit" class="btn">ADD</button>
+            <button href="javascript:void(0)" , type="button" class="btn cancel" , onclick="closeNav()">Cancel</button>
+        </form>
+    </div>
+
+</body>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/sidebar.js"></script>
+<script src="scripts/pizzaObj.js"></script>
+<script src="scripts/readImage.js"></script>
+<script src="scripts/sorting.js"></script>
+
+</html>
